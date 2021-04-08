@@ -1,0 +1,57 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+
+  &.header-scrolled, &.header-inner-pages {
+    background: rgba(darken($secondary, 15), 0.8);
+  }
+
+  .logo {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    a {
+      color: #fff;
+      span {
+        color: $primary;
+      }
+    }
+
+    img {
+      max-height: 40px;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+#  Get Startet Button
+--------------------------------------------------------------*/
+.get-started-btn {
+  color: $white;
+  border-radius: 4px;
+  padding: 7px 25px 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  border: 2px solid $primary;
+  &:hover {
+    background: darken($primary, 5);
+    color: $black;
+  }
+
+  @media (max-width: 992px) {
+    padding: 7px 20px 8px 20px;
+    margin-right: 15px;
+  }
+
+}

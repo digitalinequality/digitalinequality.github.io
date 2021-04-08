@@ -1,0 +1,75 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Titillium Web', sans-serif;
+    color: #ffcd39;
+    webkit-tap-highlight-color: rgba(255, 255, 255, .2)
+}
+
+#hero h1 {
+    font-family: 'Titillium Web', sans-serif;
+    webkit-tap-highlight-color: rgba(255, 255, 255, .2)
+}
+
+p {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.hero {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+td, th {
+    color: #ffffff;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background: #000000;
+}
+
+#team a, h3 {
+    color: #ffcd39;
+}
+
+#intro a {
+    color: #1e7e34;
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    /*border: 2px solid #fff;*/
+    /*border-radius: 100% !important;*/
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out
+}
+
+.btn-circle:focus, .btn-circle:hover {
+    outline: 0;
+    color: #fff;
+    background: rgba(255, 255, 255, .1)
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear
+}

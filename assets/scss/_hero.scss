@@ -1,0 +1,96 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/hero-bg.jpg") top center;
+  background-size: cover;
+  position: relative;
+
+  &:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .container {
+    position: relative;
+    padding-top: 74px;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #fff;
+    font-family: $font-secondary;
+    span {
+      color: $primary;
+    }
+  }
+
+  h2 {
+    color: rgba($white, .9);
+    margin: 10px 0 0 0;
+    font-size: 24px;
+  }
+
+  .icon-box {
+    padding: 30px 20px;
+    transition: ease-in-out 0.3s;
+    border: 1px solid rgba($white, .3);
+    height: 100%;
+    text-align: center;
+
+    i {
+      font-size: 32px;
+      line-height: 1;
+      color: $primary;
+    }
+
+    h3 {
+      font-weight: 700;
+      margin: 10px 0 0 0;
+      padding: 0;
+      line-height: 1;
+      font-size: 20px;
+      line-height: 26px;
+      a {
+        color: $white;
+        transition: ease-in-out 0.3s;
+        &:hover {
+          color: $primary;
+        }
+      }
+  
+    }
+    &:hover {
+      border-color: $primary;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    background-attachment: fixed;
+  }
+
+  @media (max-width: 768px) {
+    height: auto;
+
+    h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    h2 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+}
