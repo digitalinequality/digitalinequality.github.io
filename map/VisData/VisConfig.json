@@ -1,0 +1,854 @@
+{
+  "ShapeRoot": "VisData/Shape/",
+  "ImbaDivnRoot": "VisData/ImbaDivn/",
+  "ImbaGridConfigRoot": "VisData/ImbaGrid/Config/",
+  "ImbaGridShapeRoot": "VisData/ImbaGrid/Shape/",
+  "ImbaGridIndexRoot": "VisData/ImbaGrid/ImbaIndex/",
+  "StartMonth": "2010-01",
+  "EndMonth": "2021-04",
+  "MonthStep": 1,
+  "AbMax": 5,
+  "alpha": 1,
+  "beta": 1,
+  "rho": 100,
+  "RhoMax": 1000,
+  "RhoStep": 10,
+  "CountryInfo": {
+    "AGO": {
+      "id": "AGO",
+      "name": "Angola",
+      "bDivn": 2
+    },
+    "ALB": {
+      "id": "ALB",
+      "name": "Albania",
+      "bDivn": 2
+    },
+    "ARE": {
+      "id": "ARE",
+      "name": "United Arab Emirates",
+      "bDivn": 2
+    },
+    "ARG": {
+      "id": "ARG",
+      "name": "Argentina",
+      "bDivn": 2
+    },
+    "ARM": {
+      "id": "ARM",
+      "name": "Armenia",
+      "bDivn": 1
+    },
+    "AUS": {
+      "id": "AUS",
+      "name": "Australia",
+      "bDivn": 2
+    },
+    "AUT": {
+      "id": "AUT",
+      "name": "Austria",
+      "bDivn": 2
+    },
+    "AZE": {
+      "id": "AZE",
+      "name": "Azerbaijan",
+      "bDivn": 2
+    },
+    "BDI": {
+      "id": "BDI",
+      "name": "Burundi",
+      "bDivn": 2
+    },
+    "BEL": {
+      "id": "BEL",
+      "name": "Belgium",
+      "bDivn": 2
+    },
+    "BEN": {
+      "id": "BEN",
+      "name": "Benin",
+      "bDivn": 2
+    },
+    "BFA": {
+      "id": "BFA",
+      "name": "Burkina Faso",
+      "bDivn": 2
+    },
+    "BGD": {
+      "id": "BGD",
+      "name": "Bangladesh",
+      "bDivn": 2
+    },
+    "BGR": {
+      "id": "BGR",
+      "name": "Bulgaria",
+      "bDivn": 2
+    },
+    "BHS": {
+      "id": "BHS",
+      "name": "The Bahamas",
+      "bDivn": 1
+    },
+    "BIH": {
+      "id": "BIH",
+      "name": "Bosnia and Herzegovina",
+      "bDivn": 2
+    },
+    "BLR": {
+      "id": "BLR",
+      "name": "Belarus",
+      "bDivn": 2
+    },
+    "BLZ": {
+      "id": "BLZ",
+      "name": "Belize",
+      "bDivn": 1
+    },
+    "BOL": {
+      "id": "BOL",
+      "name": "Bolivia",
+      "bDivn": 2
+    },
+    "BRA": {
+      "id": "BRA",
+      "name": "Brazil",
+      "bDivn": 2
+    },
+    "BRN": {
+      "id": "BRN",
+      "name": "Brunei",
+      "bDivn": 2
+    },
+    "BTN": {
+      "id": "BTN",
+      "name": "Bhutan",
+      "bDivn": 2
+    },
+    "BWA": {
+      "id": "BWA",
+      "name": "Botswana",
+      "bDivn": 2
+    },
+    "CAF": {
+      "id": "CAF",
+      "name": "Central African Republic",
+      "bDivn": 2
+    },
+    "CHE": {
+      "id": "CHE",
+      "name": "Switzerland",
+      "bDivn": 2
+    },
+    "CHL": {
+      "id": "CHL",
+      "name": "Chile",
+      "bDivn": 2
+    },
+    "CIV": {
+      "id": "CIV",
+      "name": "Ivory Coast",
+      "bDivn": 2
+    },
+    "CMR": {
+      "id": "CMR",
+      "name": "Cameroon",
+      "bDivn": 2
+    },
+    "COD": {
+      "id": "COD",
+      "name": "Democratic Republic of the Congo",
+      "bDivn": 2
+    },
+    "COG": {
+      "id": "COG",
+      "name": "Republic of the Congo",
+      "bDivn": 2
+    },
+    "COL": {
+      "id": "COL",
+      "name": "Colombia",
+      "bDivn": 2
+    },
+    "CRI": {
+      "id": "CRI",
+      "name": "Costa Rica",
+      "bDivn": 2
+    },
+    "CUB": {
+      "id": "CUB",
+      "name": "Cuba",
+      "bDivn": 2
+    },
+    "CYP": {
+      "id": "CYP",
+      "name": "Cyprus",
+      "bDivn": 1
+    },
+    "CZE": {
+      "id": "CZE",
+      "name": "Czech Republic",
+      "bDivn": 2
+    },
+    "DEU": {
+      "id": "DEU",
+      "name": "Germany",
+      "bDivn": 2
+    },
+    "DJI": {
+      "id": "DJI",
+      "name": "Djibouti",
+      "bDivn": 2
+    },
+    "DOM": {
+      "id": "DOM",
+      "name": "Dominican Republic",
+      "bDivn": 2
+    },
+    "DZA": {
+      "id": "DZA",
+      "name": "Algeria",
+      "bDivn": 2
+    },
+    "ECU": {
+      "id": "ECU",
+      "name": "Ecuador",
+      "bDivn": 2
+    },
+    "EGY": {
+      "id": "EGY",
+      "name": "Egypt",
+      "bDivn": 2
+    },
+    "ERI": {
+      "id": "ERI",
+      "name": "Eritrea",
+      "bDivn": 2
+    },
+    "ESP": {
+      "id": "ESP",
+      "name": "Spain",
+      "bDivn": 2
+    },
+    "ETH": {
+      "id": "ETH",
+      "name": "Ethiopia",
+      "bDivn": 2
+    },
+    "FRA": {
+      "id": "FRA",
+      "name": "France",
+      "bDivn": 2
+    },
+    "GAB": {
+      "id": "GAB",
+      "name": "Gabon",
+      "bDivn": 2
+    },
+    "GBR": {
+      "id": "GBR",
+      "name": "United Kingdom",
+      "bDivn": 2
+    },
+    "GEO": {
+      "id": "GEO",
+      "name": "Georgia",
+      "bDivn": 2
+    },
+    "GHA": {
+      "id": "GHA",
+      "name": "Ghana",
+      "bDivn": 2
+    },
+    "GIN": {
+      "id": "GIN",
+      "name": "Guinea",
+      "bDivn": 2
+    },
+    "GMB": {
+      "id": "GMB",
+      "name": "The Gambia",
+      "bDivn": 2
+    },
+    "GNB": {
+      "id": "GNB",
+      "name": "Guinea-Bissau",
+      "bDivn": 2
+    },
+    "GNQ": {
+      "id": "GNQ",
+      "name": "Equatorial Guinea",
+      "bDivn": 2
+    },
+    "GRC": {
+      "id": "GRC",
+      "name": "Greece",
+      "bDivn": 2
+    },
+    "GTM": {
+      "id": "GTM",
+      "name": "Guatemala",
+      "bDivn": 2
+    },
+    "GUY": {
+      "id": "GUY",
+      "name": "Guyana",
+      "bDivn": 2
+    },
+    "HND": {
+      "id": "HND",
+      "name": "Honduras",
+      "bDivn": 2
+    },
+    "HRV": {
+      "id": "HRV",
+      "name": "Croatia",
+      "bDivn": 2
+    },
+    "HTI": {
+      "id": "HTI",
+      "name": "Haiti",
+      "bDivn": 2
+    },
+    "HUN": {
+      "id": "HUN",
+      "name": "Hungary",
+      "bDivn": 2
+    },
+    "IDN": {
+      "id": "IDN",
+      "name": "Indonesia",
+      "bDivn": 2
+    },
+    "IRN": {
+      "id": "IRN",
+      "name": "Iran",
+      "bDivn": 2
+    },
+    "IRQ": {
+      "id": "IRQ",
+      "name": "Iraq",
+      "bDivn": 2
+    },
+    "ISL": {
+      "id": "ISL",
+      "name": "Iceland",
+      "bDivn": 2
+    },
+    "ITA": {
+      "id": "ITA",
+      "name": "Italy",
+      "bDivn": 2
+    },
+    "JOR": {
+      "id": "JOR",
+      "name": "Jordan",
+      "bDivn": 2
+    },
+    "JPN": {
+      "id": "JPN",
+      "name": "Japan",
+      "bDivn": 2
+    },
+    "KHM": {
+      "id": "KHM",
+      "name": "Cambodia",
+      "bDivn": 2
+    },
+    "KOR": {
+      "id": "KOR",
+      "name": "South Korea",
+      "bDivn": 2
+    },
+    "KWT": {
+      "id": "KWT",
+      "name": "Kuwait",
+      "bDivn": 1
+    },
+    "LAO": {
+      "id": "LAO",
+      "name": "Laos",
+      "bDivn": 2
+    },
+    "LBN": {
+      "id": "LBN",
+      "name": "Lebanon",
+      "bDivn": 2
+    },
+    "LBR": {
+      "id": "LBR",
+      "name": "Liberia",
+      "bDivn": 2
+    },
+    "LBY": {
+      "id": "LBY",
+      "name": "Libya",
+      "bDivn": 1
+    },
+    "LKA": {
+      "id": "LKA",
+      "name": "Sri Lanka",
+      "bDivn": 2
+    },
+    "LSO": {
+      "id": "LSO",
+      "name": "Lesotho",
+      "bDivn": 1
+    },
+    "LUX": {
+      "id": "LUX",
+      "name": "Luxembourg",
+      "bDivn": 2
+    },
+    "MAR": {
+      "id": "MAR",
+      "name": "Morocco",
+      "bDivn": 2
+    },
+    "MDA": {
+      "id": "MDA",
+      "name": "Moldova",
+      "bDivn": 1
+    },
+    "MDG": {
+      "id": "MDG",
+      "name": "Madagascar",
+      "bDivn": 2
+    },
+    "MEX": {
+      "id": "MEX",
+      "name": "Mexico",
+      "bDivn": 2
+    },
+    "MKD": {
+      "id": "MKD",
+      "name": "Republic of Macedonia",
+      "bDivn": 1
+    },
+    "MLI": {
+      "id": "MLI",
+      "name": "Mali",
+      "bDivn": 2
+    },
+    "MMR": {
+      "id": "MMR",
+      "name": "Myanmar",
+      "bDivn": 2
+    },
+    "MNE": {
+      "id": "MNE",
+      "name": "Montenegro",
+      "bDivn": 1
+    },
+    "MOZ": {
+      "id": "MOZ",
+      "name": "Mozambique",
+      "bDivn": 2
+    },
+    "MRT": {
+      "id": "MRT",
+      "name": "Mauritania",
+      "bDivn": 2
+    },
+    "MYS": {
+      "id": "MYS",
+      "name": "Malaysia",
+      "bDivn": 2
+    },
+    "NAM": {
+      "id": "NAM",
+      "name": "Namibia",
+      "bDivn": 2
+    },
+    "NCL": {
+      "id": "NCL",
+      "name": "New Caledonia",
+      "bDivn": 2
+    },
+    "NER": {
+      "id": "NER",
+      "name": "Niger",
+      "bDivn": 2
+    },
+    "NGA": {
+      "id": "NGA",
+      "name": "Nigeria",
+      "bDivn": 2
+    },
+    "NIC": {
+      "id": "NIC",
+      "name": "Nicaragua",
+      "bDivn": 2
+    },
+    "NLD": {
+      "id": "NLD",
+      "name": "Netherlands",
+      "bDivn": 2
+    },
+    "NPL": {
+      "id": "NPL",
+      "name": "Nepal",
+      "bDivn": 2
+    },
+    "OMN": {
+      "id": "OMN",
+      "name": "Oman",
+      "bDivn": 2
+    },
+    "PAN": {
+      "id": "PAN",
+      "name": "Panama",
+      "bDivn": 2
+    },
+    "PER": {
+      "id": "PER",
+      "name": "Peru",
+      "bDivn": 2
+    },
+    "PHL": {
+      "id": "PHL",
+      "name": "Philippines",
+      "bDivn": 2
+    },
+    "PNG": {
+      "id": "PNG",
+      "name": "Papua New Guinea",
+      "bDivn": 2
+    },
+    "POL": {
+      "id": "POL",
+      "name": "Poland",
+      "bDivn": 2
+    },
+    "PRT": {
+      "id": "PRT",
+      "name": "Portugal",
+      "bDivn": 2
+    },
+    "PRY": {
+      "id": "PRY",
+      "name": "Paraguay",
+      "bDivn": 2
+    },
+    "QAT": {
+      "id": "QAT",
+      "name": "Qatar",
+      "bDivn": 1
+    },
+    "ROU": {
+      "id": "ROU",
+      "name": "Romania",
+      "bDivn": 2
+    },
+    "RWA": {
+      "id": "RWA",
+      "name": "Rwanda",
+      "bDivn": 2
+    },
+    "SAU": {
+      "id": "SAU",
+      "name": "Saudi Arabia",
+      "bDivn": 1
+    },
+    "SDN": {
+      "id": "SDN",
+      "name": "Sudan",
+      "bDivn": 2
+    },
+    "SEN": {
+      "id": "SEN",
+      "name": "Senegal",
+      "bDivn": 2
+    },
+    "SLB": {
+      "id": "SLB",
+      "name": "Solomon Islands",
+      "bDivn": 2
+    },
+    "SLE": {
+      "id": "SLE",
+      "name": "Sierra Leone",
+      "bDivn": 2
+    },
+    "SLV": {
+      "id": "SLV",
+      "name": "El Salvador",
+      "bDivn": 2
+    },
+    "SOM": {
+      "id": "SOM",
+      "name": "Somaliland",
+      "bDivn": 2
+    },
+    "SRB": {
+      "id": "SRB",
+      "name": "Serbia",
+      "bDivn": 2
+    },
+    "SUR": {
+      "id": "SUR",
+      "name": "Suriname",
+      "bDivn": 2
+    },
+    "SVK": {
+      "id": "SVK",
+      "name": "Slovakia",
+      "bDivn": 2
+    },
+    "SVN": {
+      "id": "SVN",
+      "name": "Slovenia",
+      "bDivn": 2
+    },
+    "SWZ": {
+      "id": "SWZ",
+      "name": "eSwatini",
+      "bDivn": 2
+    },
+    "SYR": {
+      "id": "SYR",
+      "name": "Syria",
+      "bDivn": 2
+    },
+    "TCD": {
+      "id": "TCD",
+      "name": "Chad",
+      "bDivn": 2
+    },
+    "TGO": {
+      "id": "TGO",
+      "name": "Togo",
+      "bDivn": 2
+    },
+    "THA": {
+      "id": "THA",
+      "name": "Thailand",
+      "bDivn": 2
+    },
+    "TLS": {
+      "id": "TLS",
+      "name": "East Timor",
+      "bDivn": 2
+    },
+    "TTO": {
+      "id": "TTO",
+      "name": "Trinidad and Tobago",
+      "bDivn": 1
+    },
+    "TUN": {
+      "id": "TUN",
+      "name": "Tunisia",
+      "bDivn": 2
+    },
+    "TUR": {
+      "id": "TUR",
+      "name": "Turkey",
+      "bDivn": 2
+    },
+    "TWN": {
+      "id": "TWN",
+      "name": "Taiwan",
+      "bDivn": 2
+    },
+    "TZA": {
+      "id": "TZA",
+      "name": "Tanzania",
+      "bDivn": 2
+    },
+    "UGA": {
+      "id": "UGA",
+      "name": "Uganda",
+      "bDivn": 2
+    },
+    "UKR": {
+      "id": "UKR",
+      "name": "Ukraine",
+      "bDivn": 2
+    },
+    "URY": {
+      "id": "URY",
+      "name": "Uruguay",
+      "bDivn": 2
+    },
+    "USA": {
+      "id": "USA",
+      "name": "United States of America",
+      "bDivn": 2
+    },
+    "VEN": {
+      "id": "VEN",
+      "name": "Venezuela",
+      "bDivn": 2
+    },
+    "VNM": {
+      "id": "VNM",
+      "name": "Vietnam",
+      "bDivn": 2
+    },
+    "VUT": {
+      "id": "VUT",
+      "name": "Vanuatu",
+      "bDivn": 2
+    },
+    "YEM": {
+      "id": "YEM",
+      "name": "Yemen",
+      "bDivn": 2
+    },
+    "ZAF": {
+      "id": "ZAF",
+      "name": "South Africa",
+      "bDivn": 2
+    },
+    "ZMB": {
+      "id": "ZMB",
+      "name": "Zambia",
+      "bDivn": 2
+    },
+    "ZWE": {
+      "id": "ZWE",
+      "name": "Zimbabwe",
+      "bDivn": 2
+    }
+  },
+  "CountryList": [
+    "AGO",
+    "ALB",
+    "ARE",
+    "ARG",
+    "ARM",
+    "AUS",
+    "AUT",
+    "AZE",
+    "BDI",
+    "BEL",
+    "BEN",
+    "BFA",
+    "BGD",
+    "BGR",
+    "BHS",
+    "BIH",
+    "BLR",
+    "BLZ",
+    "BOL",
+    "BRA",
+    "BRN",
+    "BTN",
+    "BWA",
+    "CAF",
+    "CHE",
+    "CHL",
+    "CIV",
+    "CMR",
+    "COD",
+    "COG",
+    "COL",
+    "CRI",
+    "CUB",
+    "CYP",
+    "CZE",
+    "DEU",
+    "DJI",
+    "DOM",
+    "DZA",
+    "ECU",
+    "EGY",
+    "ERI",
+    "ESP",
+    "ETH",
+    "FRA",
+    "GAB",
+    "GBR",
+    "GEO",
+    "GHA",
+    "GIN",
+    "GMB",
+    "GNB",
+    "GNQ",
+    "GRC",
+    "GTM",
+    "GUY",
+    "HND",
+    "HRV",
+    "HTI",
+    "HUN",
+    "IDN",
+    "IRN",
+    "IRQ",
+    "ISL",
+    "ITA",
+    "JOR",
+    "JPN",
+    "KHM",
+    "KOR",
+    "KWT",
+    "LAO",
+    "LBN",
+    "LBR",
+    "LBY",
+    "LKA",
+    "LSO",
+    "LUX",
+    "MAR",
+    "MDA",
+    "MDG",
+    "MEX",
+    "MKD",
+    "MLI",
+    "MMR",
+    "MNE",
+    "MOZ",
+    "MRT",
+    "MYS",
+    "NAM",
+    "NCL",
+    "NER",
+    "NGA",
+    "NIC",
+    "NLD",
+    "NPL",
+    "OMN",
+    "PAN",
+    "PER",
+    "PHL",
+    "PNG",
+    "POL",
+    "PRT",
+    "PRY",
+    "QAT",
+    "ROU",
+    "RWA",
+    "SAU",
+    "SDN",
+    "SEN",
+    "SLB",
+    "SLE",
+    "SLV",
+    "SOM",
+    "SRB",
+    "SUR",
+    "SVK",
+    "SVN",
+    "SWZ",
+    "SYR",
+    "TCD",
+    "TGO",
+    "THA",
+    "TLS",
+    "TTO",
+    "TUN",
+    "TUR",
+    "TWN",
+    "TZA",
+    "UGA",
+    "UKR",
+    "URY",
+    "USA",
+    "VEN",
+    "VNM",
+    "VUT",
+    "YEM",
+    "ZAF",
+    "ZMB",
+    "ZWE"
+  ]
+}
