@@ -1,77 +1,59 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>Digital Inequality Visualization</title>
-    <link rel="stylesheet" href="main.c52e0fe2.css">
+    <link rel="stylesheet" href="main.60422cf9.css">
+    <link rel="stylesheet" href="all.488ff2e3.css">
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css">
-    <link href="https://fonts.loli.net/css?family=Titillium+Web:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="MapBox.3bef9122.js"></script>
-    <script type="text/javascript" src="Utility.9657de0a.js"></script>
-<script src="main.c52e0fe2.js"></script></head>
-
+    <link href="https://fonts.loli.net/css?family=Titillium+Web:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
+    <script type="text/javascript" src="MapBox.3d1f8435.js"></script>
+    <script type="text/javascript" src="Utility.ec086996.js"></script>
+</head>
 <body>
-<div id="map">
-
-</div>
-
-<div id="confBoard">
-    <h3 style="text-align: center">Digital Inequality Visualization</h3>
-    <h4 style="text-align: center">Imbalance Index</h4>
+<div id="map"></div>
+<div id="confBoard"><h3 style="text-align:center">Digital Inequality Visualization</h3> <h4 style="text-align:center">
+    Imbalance Index</h4>
     <div>
         <div id="legend"></div>
-        <div id="legendTick">
-            <span>0</span><span>0.25</span><span>0.5</span><span>0.75</span>1
-        </div>
-
+        <div id="legendTick"><span>0</span><span>0.25</span><span>0.5</span><span>0.75</span>1</div>
     </div>
     <div>
-        <div class="horizontal">
-            <span class="mathSym">&alpha;</span>
-            <input class="shortRange" type="range" id="alpha">
-            <input class="paramInput" type="number" id="nbAlpha" for="alpha">
-        </div>
-        <div class="horizontal">
-            <span class="mathSym">&beta;</span>
-            <input class="shortRange" type="range" id="beta">
-            <input class="paramInput" type="number" id="nbBeta" for="beta">
-        </div>
-        <div class="horizontal">
-            <span class="mathSym">&rho;</span>
-            <input class="shortRange" type="range" id="rho">
-            <input class="paramInput" type="number" id="nbRho" for="rho">
-        </div>
+        <div class="horizontal"><span class="mathSym">&alpha;</span> <input class="shortRange" type="range" id="alpha">
+            <input class="paramInput" type="number" id="nbAlpha" for="alpha"></div>
+        <div class="horizontal"><span class="mathSym">&beta;</span> <input class="shortRange" type="range" id="beta">
+            <input class="paramInput" type="number" id="nbBeta" for="beta"></div>
+        <div class="horizontal"><span class="mathSym">&rho;</span> <input class="shortRange" type="range" id="rho">
+            <input class="paramInput" type="number" id="nbRho" for="rho"></div>
     </div>
     <div>Date: <label id="lbMonth" for="rngMonth">Sometext</label></div>
-    <div class="horizontal">
-        <input id="rngMonth" type="range">
-    </div>
-    <div class="horizontal">
-        <select name="country" id="selCountry" onchange="">
-            <option value="0">World Wide</option>
-        </select>
+    <div class="horizontal"><i id="bnPlay" class="fa-play fas"></i> <input id="rngMonth" type="range"></div>
+    <div class="horizontal"><select name="country" id="selCountry" onchange="">
+        <option value="0">World Wide</option>
+    </select>
         <button id="bnToWorld" type="button">To World</button>
     </div>
-    <div class="horizontal">
-        <label><input type="radio" name="divnOrGrid" id="rdDivn">Division</label>
-        <label><input type="radio" name="divnOrGrid" id="rdGrid">Grid</label>
-        <select name="detailSetup" id="detailSetup" disabled="">
-            <option value="0">Select...</option>
-        </select>
-    </div>
+    <div class="horizontal"><label><input type="radio" name="divnOrGrid" id="rdDivn">Division</label> <label><input
+            type="radio" name="divnOrGrid" id="rdGrid">Grid</label> <select name="detailSetup" id="detailSetup"
+                                                                            disabled>
+        <option value="0">Select...</option>
+    </select></div>
+<!--    <hr>-->
     <hr>
-
-    <div id="ad">
-        <p style="text-align: justify">The imbalance index calculation can be found on our <a href="https://digitalinequality.github.io">website</a>, or in our <a href="https://arxiv.org/abs/2104.03948">paper</a>. Our index relies solely on the population information
-            and the number of base stations of a given granule (division or grid). The population data we used is from
-            <a href="https://dataforgood.fb.com/tools/population-density-maps/">Facebook's High Resolution Population
-                Density Maps and Demographic Estimates</a>. The BS data comes from the <a href="https://opencellid.org/">OpenCellId Project of Unwired Labs</a>.</p>
-    </div>
+    <div id="ad"><p style="text-align:justify">The imbalance index calculation can be found on our <a
+            href="https://digitalinequality.github.io">website</a>, or in our <a
+            href="https://arxiv.org/abs/2104.03948">paper</a>. Our index relies solely on the population information and
+        the number of base stations of a given granule (division or grid). The population data we used is from <a
+                href="https://dataforgood.fb.com/tools/population-density-maps/">Facebook's High Resolution Population
+            Density Maps and Demographic Estimates</a>. The BS data comes from the <a href="https://opencellid.org/">OpenCellId
+            Project of Unwired Labs</a>.
+        <hr>
+        This map is designed by Yi Cao @ <a href="https://www.ujn.edu.cn/">UJN</a> and <a
+                href="https://chuanting.github.io">Chuanting Zhang</a>@<a
+                href="https://www.kaust.edu.sa/en">KAUST</a>. </p></div>
 </div>
-
-<div id="infoBoard">
-    <h3>Statistics</h3>
+<div id="infoBoard"><h3>Statistics</h3>
     <ul>
         <li><strong>Name:</strong> <span id="infoName"></span></li>
         <li><strong>Population:</strong> <span id="infoPopu"></span></li>
@@ -79,24 +61,12 @@
         <li><strong>Imbalance Index:</strong> <span id="infoImba"></span></li>
     </ul>
 </div>
-
 <!--<div id="moreInfo">-->
 <!--    <div id="moreInfoHeader">More Information</div>-->
-<!--    <div id="moreInfoContent">-->
-<!--        <p>This map is designed by Yi Cao @ <a href="https://www.ujn.edu.cn/">UJN</a> and <a href="https://chuanting.github.io">Chuanting Zhang</a>@<a href="https://www.kaust.edu.sa/en">KAUST</a>.-->
-<!--        </p>-->
-<!--&lt;!&ndash;        <p style="text-align: justify">The imbalance index calculation can be found on our <a&ndash;&gt;-->
-<!--&lt;!&ndash;                href="https://digitalinequality.github.io">website</a>, or in our <a&ndash;&gt;-->
-<!--&lt;!&ndash;                href="https://arxiv.org/abs/2104.03948">paper</a>. Our index relies solely on the population information&ndash;&gt;-->
-<!--&lt;!&ndash;            and the number of base stations of a given granule (division or grid). The population data we used is from&ndash;&gt;-->
-<!--&lt;!&ndash;            <a href="https://dataforgood.fb.com/tools/population-density-maps/">Facebook's High Resolution Population&ndash;&gt;-->
-<!--&lt;!&ndash;                Density Maps and Demographic Estimates</a>. The BS data comes from the <a&ndash;&gt;-->
-<!--&lt;!&ndash;                    href="https://opencellid.org/">OpenCellId Project of Unwired Labs</a>.</p>&ndash;&gt;-->
-<!--&lt;!&ndash;        <p>@ <a href="https://www.mapbox.com/about/maps/">Mapbox</a> @ <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>&ndash;&gt;-->
-<!--&lt;!&ndash;        </p>&ndash;&gt;-->
+<!--    <div id="moreInfoContent"><p>This map is designed by Yi Cao @ <a href="https://www.ujn.edu.cn/">UJN</a> and <a-->
+<!--            href="https://chuanting.github.io">Chuanting Zhang</a>@<a href="https://www.kaust.edu.sa/en">KAUST</a>. </p>-->
 <!--    </div>-->
 <!--</div>-->
-<div id="infodiv"></div>
+<!--<div id="infodiv"></div>-->
 </body>
-
 </html>
